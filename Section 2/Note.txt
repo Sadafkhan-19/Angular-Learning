@@ -1,0 +1,18 @@
+index.html file is served by the serever
+
+
+Components
+Components are key feature in Angular. 
+There are four properties passed to NG module, declerations , imports, providers.
+
+----------------------------------------
+App module
+Angular users components to build webpages
+
+and users modules to basically bundle different pieces
+
+for example, components of your app into packages.
+App module is a bundle of functionalities of our app and it basically gives angled information.
+
+
+we use ng g c "component name" for creating component
