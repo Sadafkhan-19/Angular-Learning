@@ -1,9 +1,22 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-<h3>I am in the component</h3>
+      <ol>
+        <li>Add a Input field which updates a property'usernamae' via Two way binding</li>
+        <li>Ouput the username property via String Interpolation</li>
+      </ol>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)] ="username">
+      <p>{{ username }}</p>
+      <button 
+      class="btn btn-primary" 
+      [disabled]= "username === ''"
+      (click) = "username = '' "
+      >Reset Username </button>
+<!-- <h3>I am in the component</h3>
     <app-server></app-server>
-    <app-servers></app-servers>
+    <app-servers></app-servers> -->
     </div>
   </div>
 </div>
