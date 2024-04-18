@@ -1,0 +1,19 @@
+Databinding = communication
+
+String interpolation - Any expression which can be resolved
+to a string in the end.
+That's the only condition for a string interpolation syntax here.
+
+Interpolation refers to embedding expressions into marked up text. By default, interpolation uses the double curly braces {{ and }} as delimiters.
+
+Square brackets indicate to angular that we're using property binding that we want to dynamically bind some property and disabled the HTML attribute.
+
+if you want to output something in your template
+
+print some text to it, use string and interpolation.
+
+If you want to change some property, be that
+
+of an HTML element or as you later learn off a directive
+
+or a component, typically use property binding.
