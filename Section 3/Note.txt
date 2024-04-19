@@ -1,0 +1,7 @@
+We can easily tell the CLI to create this component in a sub folder by basically passing a path here.
+
+So instead of just saying recipe list we can say recipes/ recipe list.
+
+Now clearly we need NG four for this, so let's add NG four. This is the directive which allows us
+
+to repeat code in our template.
