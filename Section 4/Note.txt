@@ -1,0 +1,2 @@
+We should first look at the error message in console for debugging a code.
+Debugging is supported by developer tools in a browser though so it would be great if we could simply check at runtime.
