@@ -1,0 +1,13 @@
+We can use property and event binding
+
+not only on HTML elements
+
+and their native properties and events as we did thus far.
+
+We can also use it on directives
+
+and we also did this with Angie class
+
+and Angie style that we use property binding.
+
+But and that is important, we can also use it
