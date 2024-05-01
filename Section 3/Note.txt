@@ -5,3 +5,5 @@ So instead of just saying recipe list we can say recipes/ recipe list.
 Now clearly we need NG four for this, so let's add NG four. This is the directive which allows us
 
 to repeat code in our template.
+
+A structural directive that conditionally includes a template based on the value of an expression coerced to Boolean. When the expression evaluates to true, Angular renders the template provided in a then clause, and when false or null, Angular renders the template provided in an optional else clause. The default template for the else clause is blank.s
