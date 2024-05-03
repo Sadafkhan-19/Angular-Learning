@@ -41,4 +41,22 @@ and structural directives,
 which also affect the whole DO
 
 
+NG style allows us to also pass an object to some property, which is also named NG style on the same directive,
 
+rendering is a better approach of accessing dom.
+
+##HostListener
+Host listener's just a convenient way of listening to events on that element.
+
+So with that we listen to the mouse entry event.
+
+We get the event data which I don't need here.
+
+But what I want to do in this case is I want to change the background color of the element.
+
+##
+Custom property binding as a side note
+
+custom event binding all the works and directives
+
+but you probably won't use that that often.
