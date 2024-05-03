@@ -1,0 +1,19 @@
+Because a service is basically just another piece in your Angular app, another class you can add
+
+which acts a central repository.
+
+As a central business unit you could say something where you can store where you can centralize your code in.
+
+So we could create a log service, for example to centralize our log statement.
+
+We could create a user service to manage the data storage here.
+
+##What is a dependency injector?
+
+Well, a dependency is something a class of ours will depend on.For example, the new account component
+
+depends on that logging service because we want to call a method in that service.
+
+And the dependence injector simply injects this dependency, injects an instance off this class
+
+i to our component automatically.
