@@ -1,5 +1,6 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe.model';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipe-list',
@@ -7,16 +8,13 @@ import { Recipe } from '../recipe.model';
   styleUrl: './recipe-list.component.css'
 })
 export class RecipeListComponent implements OnInit {
-@Output() recipeWasSelected = new EventEmitter<Recipe>();
-recipes: Recipe[] = [
-  new Recipe('A test recipe','This is test','https://www.eatingwell.com/thmb/yMc-omrZge4WvdofEtjNWSVHG10=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chicken-piccata-casserole-3x2-167-f44730f489cc4b9493547de1c76a3b93.jpg' ),
-  new Recipe('A test recipe','This is test','https://www.eatingwell.com/thmb/yMc-omrZge4WvdofEtjNWSVHG10=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chicken-piccata-casserole-3x2-167-f44730f489cc4b9493547de1c76a3b93.jpg' ),
-  new Recipe('A test recipe','This is test','https://www.eatingwell.com/thmb/yMc-omrZge4WvdofEtjNWSVHG10=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Chicken-piccata-casserole-3x2-167-f44730f489cc4b9493547de1c76a3b93.jpg' )
-];
+recipes: Recipe[];
+  recipeWasSelected: any;
+  
 
-constructor() { }
-
+constructor(private recipeService :RecipeService) { }
 ngOnInit() {
+  this.recipes = this.recipeService.getRecipes();
 
 }
 
